@@ -7,10 +7,21 @@ public class InverseK {
 
     private double Long_arm[];
 
+    /**
+     * Constructor de cinematica inversa
+     * Recibe como entrada la longitud del brazo
+     * @param long_arm
+     */
     public InverseK(double[] long_arm) {
         Long_arm = long_arm;
     }
 
+    /**
+     * Funcion que obtiene los angulos apartir de un arreglo
+     * el arreglo contiene coordenadas x y z en ese orden
+     * @param coord
+     * @return Q
+     */
     public double[] getAngles(float coord[]) {
         /*
         coord[0] -> X

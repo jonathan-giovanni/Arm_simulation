@@ -22,6 +22,10 @@ public class frmMain extends Window {
     private JTextField txtCoordinateY;
     private JTextField txtCoordinateZ;
 
+    /**
+     * Constructor del formulario
+     * Donde se cargan los botones y entradas de Texto
+     */
     public frmMain() {
 
 
@@ -80,7 +84,10 @@ public class frmMain extends Window {
         });
     }
 
-
+    /**
+     * Se inicializa el formulario y se agrega el panel
+     * Ademas se hace visible
+     */
     @Override
     public void settings() {
         super.settings();
@@ -96,7 +103,6 @@ public class frmMain extends Window {
     @Override
     public void draw() {
         super.draw();
-
     }
 
     void applyIK(){

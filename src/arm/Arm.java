@@ -12,6 +12,11 @@ public class Arm {
     double L[];
     double Q[];
 
+    /**
+     * Constructor de Arm se cargan los .obj
+     * y se establece la longitud del brazo
+     * @param pApplet
+     */
     public Arm(PApplet pApplet){
         context     = pApplet;
 
@@ -31,10 +36,17 @@ public class Arm {
         loArm.disableStyle();
     }
 
+    /**
+     * Establece los angulos en radianes al brazo
+     * @param q
+     */
     public void setAngles(double q[]){
         Q = q;
     }
 
+    /**
+     * dibuja el brazo con cada uno de sus elementos
+     */
     public void drawArm(){
         /**     base no rotatoria   **/
         context.fill(255, 200, 10,100);
@@ -62,7 +74,16 @@ public class Arm {
         context.shape(end);
     }
 
+    /**
+     * Retorna la longitud del brazo
+     * @return L
+     */
     public double[] getL(){return L;}
+
+    /**
+     * Retorna los angulos en radianes
+     * @return Q
+     */
     public double[] getQ(){return Q;}
 }
 
