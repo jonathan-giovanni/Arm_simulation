@@ -11,7 +11,7 @@ public class Window extends PApplet {
     float size;
     PVector origin;
     float rX,rY,zoom;
-    public static float coord_cartesian[] = new float[] {1,90,150};
+    public static float coord_cartesian[] = new float[] {-17,98,-31};
     float millisOld, gTime, gSpeed = 8;
     public static boolean test = false;
 
@@ -132,9 +132,9 @@ public class Window extends PApplet {
 
     void writePos(){
         arm.setAngles(ik.getAngles(coord_cartesian));
-        setTime();
-        coord_cartesian[0] = sin(gTime*PI/2)*20;
-        coord_cartesian[1] = 90 + sin(gTime*PI)*10;
-        coord_cartesian[2] = sin(gTime*PI)*10;
+        //setTime();
+        //coord_cartesian[0] = sin(gTime*PI/2)*20;      //X
+        //coord_cartesian[1] = 90 + sin(gTime*PI)*10;   //Y
+        //coord_cartesian[2] = -40 + sin(gTime*PI)*10;        //Z
     }
 }
