@@ -20,9 +20,9 @@ public class Window extends PApplet {
     float size;
     PVector origin;
     float rX,rY,zoom;
+    // x y z
     public static float coord_cartesian[] = new float[] {-17,98,-31};
     float millisOld, gTime, gSpeed = 8;
-    public static boolean test = false;
 
     static double angles[];
 
@@ -82,7 +82,13 @@ public class Window extends PApplet {
         /** escala de los objetos**/
         scale(-1.2f);
 
-        /** esfera que muestra la posicion en coord X Y Z **/
+        /** esfera que muestra la posicion en coord X Y Z
+         *
+         * X -> coord[0]
+         * Y -> coord[1]
+         * Z -> coord[2]
+         *
+         * **/
         pushMatrix();
             noStroke();
             fill(250, 100, 1);
@@ -91,7 +97,9 @@ public class Window extends PApplet {
         popMatrix();
 
 
-
+        /**
+         * Dibuja el brazo
+         */
         pushMatrix();
             arm.drawArm();
         popMatrix();
@@ -125,6 +133,7 @@ public class Window extends PApplet {
     private void drawAxes() {
         float margin = 90;
 
+        //TODO tony va a hacer que el eje aparezca abajo
         //X rojo
         text("+X",margin,-2,0);
         text("-X",-margin,-2,0);

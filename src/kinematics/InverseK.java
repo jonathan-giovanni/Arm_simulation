@@ -3,6 +3,22 @@ package kinematics;
 
 import static java.lang.Math.*;
 
+
+
+
+/**
+            -Z  -X
+             |  /
+             | /
+             |/
+     -Y------/-------+Y
+            /|
+           / |
+          /  |
+        +X  +Z
+**/
+
+
 public class InverseK {
 
     private double Long_arm[];
@@ -19,6 +35,7 @@ public class InverseK {
     /**
      * Funcion que obtiene los angulos apartir de un arreglo
      * el arreglo contiene coordenadas x y z en ese orden
+     * y devuelve un arreglo de angulos en radianes
      * @param coord
      * @return Q
      */

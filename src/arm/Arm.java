@@ -9,8 +9,8 @@ public class Arm {
 
     PApplet context;
     PShape base, shoulder, upArm, loArm, end;
-    double L[];
-    double Q[];
+    double L[];// longitud del brazo
+    double Q[];// angulos en radianes del brazo
 
     /**
      * Constructor de Arm se cargan los .obj

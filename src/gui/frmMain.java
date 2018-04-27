@@ -3,8 +3,6 @@ package gui;
 import kinematics.InverseK;
 
 import javax.swing.*;
-import java.util.Hashtable;
-
 public class frmMain extends Window {
 
     InverseK ik2;
