@@ -25,8 +25,8 @@ public class ForwardK {
 
 
 
-        double x = (L[0]*cos(Q[1] )+L[1]*cos(Q[1]+Q[2] ))*sin(Q[0]);
-        double y = (L[0]*cos(Q[1])+L[1]*cos(Q[1]+Q[2]))*cos(Q[0]);
+        double x = (L[0]*cos(-PI/2 +Q[1] )+L[1]*cos(PI/2 -Q[1]+Q[2] ))*sin(Q[0]);
+        double y = (L[0]*cos(Q[1])   +L[1]*cos(Q[1]+Q[2])*cos(Q[0]));
         double z =  L[0]*sin(PI/2 + Q[1] )+L[1]*sin(PI/2- Q[1]+Q[2] );
 
 
