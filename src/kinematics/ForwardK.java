@@ -1,5 +1,6 @@
 package kinematics;
 
+import static java.lang.Math.PI;
 import static java.lang.Math.cos;
 import static java.lang.Math.sin;
 
@@ -14,6 +15,7 @@ public class ForwardK {
         Q = q;
 
 
+
         //ordenando
         //x->y
         //y->z
@@ -21,9 +23,11 @@ public class ForwardK {
         //aqui opera solo con radianes
 
 
-        double x = (L[0]*cos(Q[1])+L[1]*cos(Q[1]+Q[2]))*sin(Q[0]);
+
+
+        double x = (L[0]*cos(Q[1] )+L[1]*cos(Q[1]+Q[2] ))*sin(Q[0]);
         double y = (L[0]*cos(Q[1])+L[1]*cos(Q[1]+Q[2]))*cos(Q[0]);
-        double z =  L[0]*sin(Q[1])+L[1]*sin(Q[1]+Q[2]);
+        double z =  L[0]*sin(PI/2 + Q[1] )+L[1]*sin(PI/2- Q[1]+Q[2] );
 
 
         //if(angle==Angle.DEGREES) for(int i=0;i<Q.length;i++) Q[i] = Q[i]*(180/Math.PI);
