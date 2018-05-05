@@ -22,8 +22,8 @@ public class Arm {
 
         //pos [0] -> F
         //pos [1] -> T
-        L = new double[]{50,70};
-        Q = new double[]{0,0,0};
+        L = new double[]{50,70};//longitud del brazo
+        Q = new double[]{0,0,0};//angulos
 
         base        = context.loadShape("r5.obj");
         shoulder    = context.loadShape("r1.obj");
@@ -43,6 +43,12 @@ public class Arm {
     public void setAngles(double q[]){
         Q = q;
     }
+    public void setAngles(double q[],boolean degrees){
+        Q = q;
+    }
+
+
+
 
     /**
      * dibuja el brazo con cada uno de sus elementos

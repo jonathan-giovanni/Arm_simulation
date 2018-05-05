@@ -27,7 +27,7 @@ public class Main {
 
         //TODO datos de prueba
 
-        float coord_cartesian[] = new float[] {0,45,40};
+        float coord_cartesian[] = new float[] {15,55,40};
         double L[] = new double[]{50,70};
         double Q[] = new double[]{0,0,0};
 

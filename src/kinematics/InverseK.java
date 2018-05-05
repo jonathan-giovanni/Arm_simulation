@@ -3,9 +3,6 @@ package kinematics;
 
 import static java.lang.Math.*;
 
-
-
-
 /**
             -Z  -X
              |  /

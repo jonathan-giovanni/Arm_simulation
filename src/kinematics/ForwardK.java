@@ -25,9 +25,11 @@ public class ForwardK {
 
 
 
-        double x = (L[0]*cos(-PI/2 +Q[1] )+L[1]*cos(PI/2 -Q[1]+Q[2] ))*sin(Q[0]);
-        double y = (L[0]*cos(Q[1])   +L[1]*cos(Q[1]+Q[2])*cos(Q[0]));
-        double z =  L[0]*sin(PI/2 + Q[1] )+L[1]*sin(PI/2- Q[1]+Q[2] );
+        double x = (L[0]*cos(-PI/2 +Q[1] )+L[1]*cos(PI/2 -Q[1]+Q[2] ))*sin(Q[0]);//ok
+
+        double y = (L[0]*cos(  PI/2) +L[1]*cos( Q[1]+Q[2] )*cos(Q[0] + PI));//ok
+
+        double z =  L[0]*sin(PI/2 + Q[1] )+L[1]*sin(PI/2- Q[1]+Q[2] );//ok
 
 
         //if(angle==Angle.DEGREES) for(int i=0;i<Q.length;i++) Q[i] = Q[i]*(180/Math.PI);
