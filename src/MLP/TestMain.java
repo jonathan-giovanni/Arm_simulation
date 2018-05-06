@@ -23,10 +23,10 @@ public class TestMain {
     }
 
     // llena la lista con los ejemplos de entrenamiento
-        ex.get(0)[0]=1; ex.get(0)[1]=1;  out.get(0)[0]=1;
-        ex.get(1)[0]=1;  ex.get(1)[1]=0;  out.get(1)[0]=1;
-        ex.get(2)[0]=0;  ex.get(2)[1]=1; out.get(2)[0]=1;
-        ex.get(3)[0]=0; ex.get(3)[1]=0; out.get(3)[0]=-0;
+        ex.get(0)[0]=1; ex.get(0)[1]=1;  out.get(0)[0]=2;
+        ex.get(1)[0]=0;  ex.get(1)[1]=1;  out.get(1)[0]=1;
+        ex.get(2)[0]=1;  ex.get(2)[1]=0; out.get(2)[0]=1;
+        ex.get(3)[0]=0; ex.get(3)[1]=0; out.get(3)[0]=0;
 
     int nn_neurons[] = {
             ex.get(0).length,    // layer 1: input layer - 2 neurons
@@ -40,7 +40,7 @@ public class TestMain {
 
     {
         //escribe resultados en el archivo arm2.dat , se guarda en / del proyecto
-        PrintWriter fout = new PrintWriter(new FileWriter("arm2.dat"));
+        PrintWriter fout = new PrintWriter(new FileWriter("arm.dat"));
         fout.println("#\tX\tY");
 
         for (int i = 0; i < 1; ++i) {
